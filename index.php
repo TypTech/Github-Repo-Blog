@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$username = '<Dein-Github-Benutzername>'; // Dein GitHub-Benutzername
+$username = '<Dein-Github-Name>'; // Dein GitHub-Benutzername
 $url = "https://api.github.com/users/$username/repos";
 
 // Dein Personal Access Token hier einfügen
@@ -33,6 +33,9 @@ if (empty($response)) {
 $repos = json_decode($response, true);
 
 echo "<h1>Meine GitHub Repositories</h1>";
+
+// Button für "Back to Home"
+echo "<div class='btn-container'><a href='/index.html' class='btn-back-home'>Back to Home</a></div>";
 
 if (empty($repos)) {
     echo "<p>Keine Repositories gefunden.</p>";
