@@ -56,7 +56,7 @@ Um das Repository herunterzuladen und zu verwalten, benötigst du **Git**. Falls
 
 Um mit der GitHub API zu kommunizieren, benötigst du ein **GitHub Personal Access Token**. Folge diesen Schritten, um ein Token zu erstellen:
 
-1. Gehe zu [GitHub Tokens erstellen](https://github.com/settings/tokens).
+1. Gehe zu [GitHub Tokens erstellen](https://github.com/settings/tokens?type=beta).
 2. Klicke auf **Generate new token**.
 3. Wähle die entsprechenden Berechtigungen aus (mindestens `repo`-Berechtigungen).
 4. Kopiere das Token und füge es in den Code ein.
