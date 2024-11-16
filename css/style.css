@@ -1,0 +1,230 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1d1d1d;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: #2e2e2e;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+h1 {
+    color: #f5f5f5;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+
+.repo-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.repo-item {
+    background-color: #3a3a3a;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+}
+
+.repo-item:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.15);
+    background-color: #444444;
+}
+
+.repo-item img {
+    max-width: 80%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.repo-link {
+    color: #ffffff;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #3b3b3b;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.repo-link:hover {
+    background-color: #0a0a0a;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.repo-details {
+    background-color: #3a3a3a;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.readme-content {
+    background-color: #444444;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 600px;
+    font-size: 1.1em;
+    color: #f5f5f5;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.repo-button {
+    background-color: #505050;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.repo-button:hover {
+    background-color: #313131;
+}
+
+
+.readme-content pre {
+    background-color: #585858;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #f5f5f5;
+    line-height: 1.5;
+}
+
+.readme-content code {
+    background-color: #585858;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.1em;
+    color: #e83e8c;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.modal.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+a:hover,
+.repo-link:hover {
+    color: #ff5733;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .repo-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .repo-item {
+        padding: 20px;
+    }
+
+    .repo-details {
+        padding: 20px;
+    }
+
+    .readme-content {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .repo-list {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+}
