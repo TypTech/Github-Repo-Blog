@@ -67,4 +67,4 @@ Um mit der GitHub API zu kommunizieren, benötigst du ein **GitHub Personal Acce
 Klonen oder laden das Projekt von GitHub auf deinen Server oder PC:
 
 ```bash
-git clone https://github.com/deinbenutzername/deinrepository.git
+git clone https://github.com/TypTech/Github-Repo-Blog.git
