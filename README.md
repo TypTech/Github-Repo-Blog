@@ -8,9 +8,12 @@ Dies ist ein einfaches Webprojekt, das es dir ermöglicht, GitHub-Repositories a
 - Holt und rendert die **`README.md`-Dateien** jedes Repositories.
 - Bietet eine **einfache Navigation** zum jeweiligen GitHub-Repository.
 
+## 0. **Vorschau**
+- Vorschau https://www.typtech.de/blog
+
 ## Voraussetzungen
 
-Bevor du das Projekt lokal ausführen kannst, stelle sicher, dass die folgenden Programme auf deinem Server oder PC installiert sind:
+Bevor du das Projekt ausführen kannst, stelle sicher, dass die folgenden Programme auf deinem Server oder PC installiert sind:
 
 ### 1. **PHP**
 
