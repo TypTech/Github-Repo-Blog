@@ -181,6 +181,31 @@ button:hover {
     animation: fadeIn 0.5s ease-in-out;
 }
 
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn-back-home {
+    background-color: #3a3a3a; 
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+
+.btn-back-home:hover {
+    background-color: #444444;
+    text-decoration: none;
+}
+
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -194,7 +219,7 @@ button:hover {
 a:hover,
 .repo-link:hover {
     color: #ff5733;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
